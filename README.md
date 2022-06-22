@@ -57,9 +57,12 @@ thresh_img8=cv2.adaptive Threshold(image_gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C
 ret,thresh_img6=cv2.threshold(image_gray,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
 
 # Display the results
-titles=["Gray Image","Threshold Image (Binary)","Threshold Image (Binary Inverse)","Threshold Image (To Zero)"
-       ,"Threshold Image (To Zero-Inverse)","Threshold Image (Truncate)","Otsu","Adaptive Threshold (Mean)","Adaptive Threshold (Gaussian)"]
-images=[image_gray,thresh_img1,thresh_img2,thresh_img3,thresh_img4,thresh_img5,thresh_img6,thresh_img7,thresh_img8]
+titles=["Gray Image","Threshold Image (Binary)","Threshold Image (Binary Inverse)",
+"Threshold Image (To Zero)"
+       ,"Threshold Image (To Zero-Inverse)","Threshold Image (Truncate)","Otsu",
+       "Adaptive Threshold (Mean)","Adaptive Threshold (Gaussian)"]
+images=[image_gray,thresh_img1,thresh_img2,thresh_img3,thresh_img4,thresh_img5,
+thresh_img6,thresh_img7,thresh_img8]
 for i in range(0,9):
     plt.figure(figsize=(10,10))
     plt.subplot(1,2,1)
@@ -79,47 +82,33 @@ for i in range(0,9):
 
 ## OUTPUT:
 
-### Original Image 
+### Original Image and Grayscale Image
 
-![Screenshot (174)](https://user-images.githubusercontent.com/75234946/169676930-09941170-79d1-466c-9bd7-94b0b72f67c6.png)
-
-
-### Grayscale Image
-
-![Screenshot (175)](https://user-images.githubusercontent.com/75234946/169676967-563d9a26-d054-4bd4-a24e-3fb3286adb0f.png)
-
+![Screenshot_653](https://user-images.githubusercontent.com/75235455/169496333-8e2526b8-8206-4f49-99a4-f7bb85939d93.png)
 
 ### Global Thresholding
 
-![Screenshot (176)](https://user-images.githubusercontent.com/75234946/169677005-d3698166-5d3f-4485-98a0-cbdff074bb19.png)
+![Screenshot_654](https://user-images.githubusercontent.com/75235455/169496436-acbb39f1-5722-4f41-929c-0eeca3d5bf8b.png)
 
+![Screenshot_655](https://user-images.githubusercontent.com/75235455/169496452-4b1d7ed7-3f3f-443c-8eaa-e03ecb303dce.png)
 
-![Screenshot (177)](https://user-images.githubusercontent.com/75234946/169677034-a40d33d1-bb73-4b54-9174-a782a6256ac4.png)
+![Screenshot_656](https://user-images.githubusercontent.com/75235455/169496473-3820f17d-4be5-4b11-a1b6-e714618db679.png)
 
+![Screenshot_657](https://user-images.githubusercontent.com/75235455/169496487-1d0e4b5a-276f-4e0e-815e-5e1903b308a4.png)
 
-![Screenshot (178)](https://user-images.githubusercontent.com/75234946/169677050-c573334c-d4a1-499e-b4be-b093047951e1.png)
-
-
-![Screenshot (179)](https://user-images.githubusercontent.com/75234946/169677092-d4107218-ad6f-4d28-81f1-4ebac553f23e.png)
-
-
-![Screenshot (180)](https://user-images.githubusercontent.com/75234946/169677114-fbe41df5-7d0b-431e-84fb-fb1cf6bf5151.png)
-
+![Screenshot_658](https://user-images.githubusercontent.com/75235455/169496503-ec96bf3f-27d3-4e58-8e1a-63f513dd34a3.png)
 
 
 ### Adaptive Thresholding
 
-![Screenshot (185)](https://user-images.githubusercontent.com/75234946/169677148-f49b62ab-7557-4896-a7e5-719e88d239bf.png)
+![Screenshot_659](https://user-images.githubusercontent.com/75235455/169496599-eb698ae2-eb45-4164-b7db-f06dfdc7fb27.png)
 
-
-![Screenshot (182)](https://user-images.githubusercontent.com/75234946/169677186-addba1b4-428c-4185-907c-333361b53090.png)
-
+![Screenshot_660](https://user-images.githubusercontent.com/75235455/169496625-e0d707a5-edeb-4956-b585-cb598cd3ac11.png)
 
 
 ### Optimum Global Thesholding using Otsu's Method
 
-![Screenshot (183)](https://user-images.githubusercontent.com/75234946/169677227-76a1e947-c0a2-4df5-837f-59bd02044cf7.png)
-
+![Screenshot_661](https://user-images.githubusercontent.com/75235455/169496683-58d6f8ca-3f4d-4931-8075-d49b3bf0585b.png)
 
 
 ## RESULT:

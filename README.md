@@ -1,4 +1,7 @@
-# Thresholding
+### Ex.No:09
+### DATE: 
+# <p align="center">Thresholding</p>
+
 ## AIM:
 To segment the image using global thresholding, adaptive thresholding and Otsu's thresholding using python and OpenCV.
 
@@ -57,12 +60,9 @@ thresh_img8=cv2.adaptive Threshold(image_gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C
 ret,thresh_img6=cv2.threshold(image_gray,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
 
 # Display the results
-titles=["Gray Image","Threshold Image (Binary)","Threshold Image (Binary Inverse)",
-"Threshold Image (To Zero)"
-       ,"Threshold Image (To Zero-Inverse)","Threshold Image (Truncate)","Otsu",
-       "Adaptive Threshold (Mean)","Adaptive Threshold (Gaussian)"]
-images=[image_gray,thresh_img1,thresh_img2,thresh_img3,thresh_img4,thresh_img5,
-thresh_img6,thresh_img7,thresh_img8]
+titles=["Gray Image","Threshold Image (Binary)","Threshold Image (Binary Inverse)","Threshold Image (To Zero)"
+       ,"Threshold Image (To Zero-Inverse)","Threshold Image (Truncate)","Otsu","Adaptive Threshold (Mean)","Adaptive Threshold (Gaussian)"]
+images=[image_gray,thresh_img1,thresh_img2,thresh_img3,thresh_img4,thresh_img5,thresh_img6,thresh_img7,thresh_img8]
 for i in range(0,9):
     plt.figure(figsize=(10,10))
     plt.subplot(1,2,1)
@@ -80,36 +80,60 @@ for i in range(0,9):
 </br>
 </br>
 
-## OUTPUT:
-
-### Original Image and Grayscale Image
-
-![Screenshot_653](https://user-images.githubusercontent.com/75235455/169496333-8e2526b8-8206-4f49-99a4-f7bb85939d93.png)
-
+## Output
+### Original Image
+![Screenshot (136)](https://user-images.githubusercontent.com/75235334/169996777-98b4fdca-a385-4c88-94a3-535268f02e42.png)
 ### Global Thresholding
+![Screenshot (137)](https://user-images.githubusercontent.com/75235334/169996934-deec590e-f052-45e7-a8c1-a35a0f84a029.png)
+![Screenshot (138)](https://user-images.githubusercontent.com/75235334/169997164-3cc3820e-b866-430f-9733-62b977f8d150.png)
+![Screenshot (139)](https://user-images.githubusercontent.com/75235334/169997319-08d03004-fcdc-4671-99b7-944e9b0701d9.png)
+![Screenshot (140)](https://user-images.githubusercontent.com/75235334/169997513-b10d4be0-1e1e-48c5-8a66-f5f944e1ebbd.png)
+![Screenshot (141)](https://user-images.githubusercontent.com/75235334/169997622-e25b2b9f-a7ad-4345-a703-f81990cc587d.png)
+<br>
+</br>
+<br>
+</br>
+</br>
+</br>
+</br>
 
-![Screenshot_654](https://user-images.githubusercontent.com/75235455/169496436-acbb39f1-5722-4f41-929c-0eeca3d5bf8b.png)
+</br>
+</br>
+</br>
 
-![Screenshot_655](https://user-images.githubusercontent.com/75235455/169496452-4b1d7ed7-3f3f-443c-8eaa-e03ecb303dce.png)
+</br>
+</br>
 
-![Screenshot_656](https://user-images.githubusercontent.com/75235455/169496473-3820f17d-4be5-4b11-a1b6-e714618db679.png)
-
-![Screenshot_657](https://user-images.githubusercontent.com/75235455/169496487-1d0e4b5a-276f-4e0e-815e-5e1903b308a4.png)
-
-![Screenshot_658](https://user-images.githubusercontent.com/75235455/169496503-ec96bf3f-27d3-4e58-8e1a-63f513dd34a3.png)
-
+</br>
+</br>
 
 ### Adaptive Thresholding
+![Screenshot (143)](https://user-images.githubusercontent.com/75235334/169997865-ae9b7448-7958-4164-a0fd-35e201717d04.png)
+![Screenshot (144)](https://user-images.githubusercontent.com/75235334/169998652-0cc03120-cdba-42f1-be78-d6fd1c2d735e.png)
+<br>
+</br>
+<br>
+</br>
+</br>
+</br>
+</br>
 
-![Screenshot_659](https://user-images.githubusercontent.com/75235455/169496599-eb698ae2-eb45-4164-b7db-f06dfdc7fb27.png)
+</br>
+</br>
+</br>
 
-![Screenshot_660](https://user-images.githubusercontent.com/75235455/169496625-e0d707a5-edeb-4956-b585-cb598cd3ac11.png)
+</br>
+</br>
+
+</br>
+</br>
 
 
 ### Optimum Global Thesholding using Otsu's Method
+![Screenshot (142)](https://user-images.githubusercontent.com/75235334/169997731-b4c789cb-6688-4b77-8c08-55ab5843f383.png)
 
-![Screenshot_661](https://user-images.githubusercontent.com/75235455/169496683-58d6f8ca-3f4d-4931-8075-d49b3bf0585b.png)
 
 
-## RESULT:
+## Result
 Thus the images are segmented using global thresholding, adaptive thresholding and optimum global thresholding using python and OpenCV.
+
